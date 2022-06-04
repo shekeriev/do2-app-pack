@@ -1,0 +1,11 @@
+SET NAMES 'utf8';
+
+DROP DATABASE IF EXISTS trackvisits;
+
+CREATE DATABASE trackvisits CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+GRANT ALL ON trackvisits.* TO 'observer'@'%' IDENTIFIED BY 'Password1';
+
+USE trackvisits;
+
+CREATE TABLE visits (id INT PRIMARY KEY AUTO_INCREMENT, ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP, dummy INT);
