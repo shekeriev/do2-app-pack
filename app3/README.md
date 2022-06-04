@@ -1,6 +1,6 @@
 # Visits
 
-A simple web application that track how many times it was visited.
+A simple web application that tracks how many times it was visited.
 
 Used mostly for demonstration in various courses and presentations.
 
