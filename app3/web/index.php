@@ -34,6 +34,8 @@
    }
 ?>
       </table>
+
+      <?php print "<br /><br /><br /><small>Processed by <b>".gethostname()."</b> on ".date('Y-m-d-H-i-s')."</small>\n"; ?>
     </div>
   </body>
 </html>

@@ -8,7 +8,7 @@ It can be used in containers or by following the classical approach.
 
 Contains the following set of files:
 
-```
+```text
 .
 ├── db                        ---> database image files
 |   └── db_setup.sql          ---> database seed file
@@ -50,3 +50,7 @@ docker container run -d --name web --net app-net -p 8000:80 visits-web:embedded
 ```
 
 Note that both containers should be attached to the same network to have working name resolution. The above sample commands expect the presense of the ***app-net*** network.
+
+When built and deployed correctly, the result should look like this:
+
+![preview of the working application](visits.png)
