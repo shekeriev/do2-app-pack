@@ -18,7 +18,8 @@ Contains the following set of files:
 ├── Dockerfile.db             ---> used to build the database image
 ├── Dockerfile.web            ---> used to build the web image. Application files should be mounted on start
 ├── Dockerfile.web.embedded   ---> used to build the web image with embedded application files
-└── README.md                 ---> this file
+├── README.md                 ---> this file
+└── visits.png                ---> preview of the application
 ```
 
 Images can be build with the following commands:
