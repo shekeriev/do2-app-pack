@@ -11,6 +11,8 @@ This repository contains the following applications:
 - [Apache Kafka Sample Producer](kafka-prod/README.md)
 - [Apache Kafka Sample Producer (Discoverer)](kafka-discoverer/README.md)
 - [RabbitMQ Sample Consumer](rabbit-cons/README.md)
+- [RabbitMQ Sample Consumer (Observer)](rabbit-observer/README.md)
 - [RabbitMQ Sample Producer](rabbit-prod/README.md)
+- [RabbitMQ Sample Producer (Discoverer)](rabbit-discoverer/README.md)
 
 For more information, check their README.md files.
