@@ -28,9 +28,9 @@ Here is a sample output:
 ```text
  [x] (K) Consumer started. Press Ctrl+C to stop ...
  [x] (K) Subscribed for prep on kafka:9092. Listening ...
- [x] (K) 2023-01-28 11:37:50 / 276 / b'warn: ram load is 53'
- [x] (K) 2023-01-28 11:37:59 / 277 / b'info: cpu load is 40'
- [x] (K) 2023-01-28 11:38:11 / 278 / b'info: cpu load is 47'
+ [x] (K) 2023-01-28 12:16:54 / 467 / b'crit: cpu load is 85'
+ [x] (K) 2023-01-28 12:16:59 / 468 / b'crit: cpu load is 86'
+ [x] (K) 2023-01-28 12:17:15 / 469 / b'crit: ram load is 82'
 ```
 
 ## Source code

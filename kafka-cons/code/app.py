@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 import os
-from datetime import datetime
+from time import strftime
 
 brokerhost = os.getenv('BROKER', "localhost:9092")
 topic = os.getenv('TOPIC', 'demo')
@@ -12,7 +12,7 @@ try:
     consumer.subscribe(topic)
     print(' [x] (K) Subscribed for ' + topic + ' on ' + brokerhost + '. Listening ...')
     for evnt in consumer:
-        print(' [x] (K) ' + datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ' / ' + str(evnt.offset) + ' / ' + str(evnt.value))
+        print(' [x] (K) ' + strftime("%Y-%m-%d %H:%M:%S") + ' / ' + str(evnt.offset) + ' / ' + str(evnt.value))
 except Exception as ex:
     print(str(ex))
 except KeyboardInterrupt:
