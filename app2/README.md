@@ -8,7 +8,7 @@ It can be used in containers or by following the classical approach.
 
 Contains the following set of files:
 
-```
+```text
 .
 ├── db                        ---> database image files
 |   └── db_setup.sql          ---> database seed file
