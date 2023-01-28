@@ -1,15 +1,16 @@
 from kafka import KafkaProducer
 import os
-from time import sleep
+from time import sleep,strftime
 from random import randrange
 
 brokerhost = os.getenv('BROKER', 'localhost:9092')
 topic = os.getenv('TOPIC', 'demo')
 
-print(' [*] Producer started. Working for ' + topic + ' on ' + brokerhost + '. Press Ctrl+C to stop.')
+print(' [x] (K) Producer started. Press Ctrl+C to stop.')
 
 try:
     producer = KafkaProducer(bootstrap_servers=[brokerhost])
+    print(' [x] (K) Working for ' + topic + ' on ' + brokerhost + '. Producing ...')
     while True:
         # determine resource type
         res = randrange(0,100)
@@ -23,12 +24,12 @@ try:
             ltype = 'warn'
         if res > 80:
             ltype = 'crit'
-        msg = ltype + ': ' + rtype + ' load is ' + str(res)
-        producer.send(topic, bytes(msg, encoding='utf-8'))
+        evnt = ltype + ': ' + rtype + ' load is ' + str(res)
+        producer.send(topic, bytes(evnt, encoding='utf-8'))
         producer.flush()
-        print(" [x] Sent %r" % msg)
+        print(" [x] (K) " + strftime("%Y-%m-%d %H:%M:%S") + " Sent: %r" % evnt)
         slp = randrange(5,20)
-        print(' [x] Sleep for ' + str(slp) + ' second(s).')
+        print(' [x] (K) ' + strftime("%Y-%m-%d %H:%M:%S") + ' Sleep for ' + str(slp) + ' second(s).')
         sleep(slp)
 except Exception as ex:
     print(str(ex))
@@ -38,4 +39,4 @@ finally:
     if producer is not None:
         producer.close()
 
-print(' [x] ... closed.')
+print(' [x] (K) ... closed.')
