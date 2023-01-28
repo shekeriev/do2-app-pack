@@ -54,7 +54,6 @@ And here is what should appear in the web interface:
 
 ![preview of the working application](observer.png)
 
-
 ## Source code
 
 The latest version of the source code can be obtained from here: <https://github.com/shekeriev/do2-app-pack/tree/main/kafka-observer>
