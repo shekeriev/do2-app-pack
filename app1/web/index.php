@@ -23,5 +23,5 @@ catch (PDOException $e) {
   print "<span id='error' style='display: none;'><small><i>".$e->getMessage()." <a href=\"#\" onclick=\"document.getElementById('error').style = 'display: none;';\">Hide</a></i></small></span>\n";
   print "</div></td></tr>\n";
 }
-print "<small>Processed by ".gethostname()."</small>\n";
+print "<small>Processed by <b>".gethostname()."</b> on ".date('Y-m-d-H-i-s')."</small>\n";
 ?>
