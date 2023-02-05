@@ -50,9 +50,9 @@ Purple Lions Are Slim And Adore Tomatoes
 172.23.0.1 - - [28/Jan/2023 18:45:10] "GET / HTTP/1.1" 200 -
 ```
 
-And here is what should appear in the web interface:
+And here is what should appear in the web interface (if exposed/published correctly):
 
-![preview of the working application](observer.png)
+![preview of the working application](https://github.com/shekeriev/do2-app-pack/raw/main/kafka-observer/observer.png)
 
 ## Source code
 

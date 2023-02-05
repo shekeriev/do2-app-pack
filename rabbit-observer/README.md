@@ -47,7 +47,7 @@ Press CTRL+C to quit
 
 And here is what should appear in the web interface (if exposed/published correctly):
 
-![preview of the working application](observer.png)
+![preview of the working application](https://github.com/shekeriev/do2-app-pack/raw/main/rabbit-observer/observer.png)
 
 ## Source code
 
