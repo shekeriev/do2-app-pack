@@ -18,7 +18,7 @@ Binds to a topic exchange and listens for messages based on a topic
 
 ```bash
 # Syntax
-docker container run [-d|-it] [--name fancyname] [--net appnet] [-e VAR1=VALUE1 -e ...] shekeriev/rabbit-cons 
+docker container run [-d|-it] [--name fancyname] [--net appnet] [-e VAR1=VALUE1 -e ...] shekeriev/rabbit-observer 
 
 # Example
 docker container run -d --name observer --net appnet -p 8080:80 -e BROKER=rabbitmq -e BROKERPORT=5672 -e EXCHANGE=demo -e TOPICS='black.*' -e APPPORT=80 shekeriev/rabbit-observer
@@ -45,7 +45,7 @@ Press CTRL+C to quit
  [x] (R) 2023-01-28 21:44:46 / 'blue.pandas': b'Blue Pandas Are Fat And Like Bananas'
 ```
 
-And here is what should appear in the web interface:
+And here is what should appear in the web interface (if exposed/published correctly):
 
 ![preview of the working application](observer.png)
 
